@@ -1,4 +1,4 @@
-#Exercice JavaScript Celsius > Fahrenheit
+# JS - Exercice Celsius > Fahrenheit
 
 Écrivez un programme qui demande à l’utilisateur de saisir une température en degrés Celsius,
 puis la convertit et l'affiche en degrés Fahrenheit.
