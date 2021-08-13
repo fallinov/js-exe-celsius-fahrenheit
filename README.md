@@ -21,3 +21,4 @@ Bonne chance !
 ## La doc...
 
 * https://divtec.gitbook.io/133a/javascript/introduction/interactions-avec-lutilisateur
+* https://divtec.gitbook.io/javascript/javascript/introduction/conversions#convertir-une-chaine-de-caracteres-en-nombre
