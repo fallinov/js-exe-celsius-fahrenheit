@@ -3,6 +3,8 @@
 Écrivez un programme qui demande à l’utilisateur de saisir une température en degrés Celsius,
 puis la convertit et l'affiche en degrés Fahrenheit.
 
+![Exemple de solution](img/capture-ecran-solution.png)
+
 1. Récupérer le dépôt de l’exercice sur votre ordinateur et l’ouvrir dans 
    votre éditeur de code (WebStorm).
 1. Modifier le code du fichier`js/main.js` pour réaliser l'exercice.
