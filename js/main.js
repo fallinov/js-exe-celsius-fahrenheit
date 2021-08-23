@@ -8,12 +8,29 @@
 (function main() {
   'use strict';
 
-  let celcius = prompt("Entrez la température en °C :");
-  celcius = parseFloat(celcius);
+  // Récupération des éléments HTML à manipuler
+  const formulaire = document.querySelector('form');
+  const txtCelcius = document.getElementById('celsius');
+  const strongFahrenheit = document.getElementById('fahrenheit');
 
-  let fahrenheit = celcius * 9 / 5 + 32;
-  alert(`${fahrenheit} °F`);
+  // Lors de l'envoi du formulaire
+  formulaire.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-  console.log(a);
+    let tempCelcius = parseFloat(txtCelcius.value);
+    let tempFahrenheit = "";
+
+    // Test la valeur saisie par l'utilisateur
+    if(isNaN(txtCelcius.value)) {
+      alert("Entrer un température valide !");
+      txtCelcius.value = "";
+    } else {
+      tempFahrenheit = tempCelcius * 9 / 5 + 32;
+    }
+
+    strongFahrenheit.innerHTML =  tempFahrenheit + "°F";
+
+    txtCelcius.focus();
+  });
 }()); // Main IIFE
 
