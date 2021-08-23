@@ -12,6 +12,7 @@
   const formulaire = document.querySelector('form');
   const txtCelcius = document.getElementById('celsius');
   const strongFahrenheit = document.getElementById('fahrenheit');
+  const ulHistorique = document.getElementById('historique');
 
   // Lors de l'envoi du formulaire
   formulaire.addEventListener('submit', function (event) {
@@ -21,11 +22,17 @@
     let tempFahrenheit = "";
 
     // Test la valeur saisie par l'utilisateur
-    if(isNaN(txtCelcius.value)) {
+    if(txtCelcius.value.length < 1 || isNaN(txtCelcius.value)) {
       alert("Entrer un température valide !");
       txtCelcius.value = "";
     } else {
       tempFahrenheit = tempCelcius * 9 / 5 + 32;
+      // ulHistorique.innerHTML += "<li>" + tempCelcius + "°C => " +
+      // tempFahrenheit + "°F</li>";
+      ulHistorique.innerHTML +=
+        `<li>
+            ${tempCelcius}°C = ${tempFahrenheit}°F
+        </li>`;
     }
 
     strongFahrenheit.innerHTML =  tempFahrenheit + "°F";
