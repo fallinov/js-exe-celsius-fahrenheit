@@ -8,12 +8,14 @@
 (function main() {
   'use strict';
 
-  let celcius = prompt("Entrez la température en °C :");
+  let celcius = prompt('Entrez la température en °C :');
   celcius = parseFloat(celcius);
+  console.log(celcius);
 
   let fahrenheit = celcius * 9 / 5 + 32;
+  console.log(fahrenheit);
   alert(`${fahrenheit} °F`);
 
-  console.log(a);
+
 }()); // Main IIFE
 
