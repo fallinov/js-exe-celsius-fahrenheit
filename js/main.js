@@ -24,7 +24,6 @@
     // Test la valeur saisie par l'utilisateur
     if(txtCelcius.value.length < 1 || isNaN(txtCelcius.value)) {
       alert('Entrer un température valide !');
-      txtCelcius.value = '';
     } else {
       tempFahrenheit = tempCelcius * 9 / 5 + 32;
       // ulHistorique.innerHTML += "<li>" + tempCelcius + "°C => " +
@@ -37,6 +36,7 @@
 
     strongFahrenheit.innerHTML =  tempFahrenheit + '°F';
 
+    txtCelcius.value = '';
     txtCelcius.focus();
   });
 }()); // Main IIFE
