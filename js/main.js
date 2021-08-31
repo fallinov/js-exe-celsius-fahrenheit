@@ -19,12 +19,12 @@
     event.preventDefault();
 
     let tempCelcius = parseFloat(txtCelcius.value);
-    let tempFahrenheit = "";
+    let tempFahrenheit = '';
 
     // Test la valeur saisie par l'utilisateur
     if(txtCelcius.value.length < 1 || isNaN(txtCelcius.value)) {
-      alert("Entrer un température valide !");
-      txtCelcius.value = "";
+      alert('Entrer un température valide !');
+      txtCelcius.value = '';
     } else {
       tempFahrenheit = tempCelcius * 9 / 5 + 32;
       // ulHistorique.innerHTML += "<li>" + tempCelcius + "°C => " +
@@ -35,7 +35,7 @@
         </li>`;
     }
 
-    strongFahrenheit.innerHTML =  tempFahrenheit + "°F";
+    strongFahrenheit.innerHTML =  tempFahrenheit + '°F';
 
     txtCelcius.focus();
   });
