@@ -10,9 +10,11 @@
 
   let celcius = prompt('Entrez la température en °C :');
   celcius = parseFloat(celcius);
+  // ou avec opérateur unaire : celcius = +celcius;
   console.log(celcius);
 
   let fahrenheit = celcius * 9 / 5 + 32;
+  // ou faire la conversion à ce moment : let fahrenheit = +celcius * 9 / 5 + 32;
   console.log(fahrenheit);
   alert(`${fahrenheit} °F`);
 
