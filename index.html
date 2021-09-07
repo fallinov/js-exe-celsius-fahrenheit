@@ -17,21 +17,22 @@
             <label for="celsius">Saisir une température °C</label>
             <input type="text" name="celsius" id="celsius">
         </li>
-        <li><button type="submit">Convertir en °F</button></li>
+        <li>
+            <button type="submit">Convertir en °F</button>
+            <button type="reset">Réinitialiser</button>
+        </li>
     </ul>
-
-
-
-
-
 </form>
 
-<p>Résultat : <strong id="fahrenheit"></strong></p>
+<div class="resultats">
+    <p>Résultat : <strong id="fahrenheit"></strong></p>
 
-<h2>Historique</h2>
-<ul id="historique">
+    <h2>Historique</h2>
+    <ul id="historique">
 
-</ul>
+    </ul>
+</div>
+
 <!-- JavaScript -->
 <script src="js/main.js"></script>
 </body>

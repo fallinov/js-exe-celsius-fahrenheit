@@ -6,37 +6,43 @@ html {
     font-family: Arial, sans-serif;
     font-size: 100%;
     font-weight: 400;
-    color: #1D3557;
-    background-color: #F1FAEE;
+    color: #2B2D42;
+    background-color: #EDF2F4   ;
+}
+
+body {
+    max-width: 800px;
+    margin: 2rem auto;
 }
 
 a {
-    color: #E63946;
+    color: #EF233C;
     text-decoration: none;
 }
 
 a:hover {
-    color: #A8DADC;
+    color: #EDF2F4;
 }
 
 button {
     padding: .6rem 1rem;
     border: none;
-    background-color: #E63946;
-    color: #F1FAEE;
+    background-color: #EF233C;
+    color: #EDF2F4;
 }
 
 button:hover  {
-    background-color: #457B9D;
+    background-color: #D90429;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     transition: all 0.3s ease;
 }
 
-/**************** FORMULAIRES ****************/
-form {
-    padding: 1rem;
+button[type="reset"] {
+    background-color: #8D99AE;;
+    color: #2B2D42;
 }
 
+/**************** FORMULAIRES ****************/
 label {
     display: block;
     margin-bottom: .3rem;

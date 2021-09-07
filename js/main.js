@@ -39,5 +39,21 @@
     txtCelcius.value = '';
     txtCelcius.focus();
   });
+
+  formulaire.addEventListener('reset', function (event) {
+    event.preventDefault();
+
+    ulHistorique.innerHTML = '';
+
+    txtCelcius.value = '';
+    txtCelcius.focus();
+  });
+
+  document.body.addEventListener('keyup', function(event) {
+    console.log(event.key);
+    if (event.key === 'Escape') {
+      formulaire.reset();
+    }
+  });
 }()); // Main IIFE
 
