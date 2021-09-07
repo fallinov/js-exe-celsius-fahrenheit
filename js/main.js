@@ -1,5 +1,5 @@
 /**
- * Fichier de base pour application web HTML/CSS/JS
+ * Conversion de degrés Celsius en Farenheit
  * @author  Steve Fallet
  * @version 0.1
  * @since   2019-08-19
@@ -14,46 +14,72 @@
   const strongFahrenheit = document.getElementById('fahrenheit');
   const ulHistorique = document.getElementById('historique');
 
-  // Lors de l'envoi du formulaire
+  /**
+   * Ecoute l'événement submit du formulaire
+   *  - Récupère la valeur saisie par l'utilisateur
+   *
+   *  - Test si la valeur est un nombre valide
+   *    - Si pas valide
+   *      - Affiche un message d'erreur dans une alerte
+   *      - Vide la zone de résultat
+   *    - Si valide
+   *      - Calcule la températeur en Farenheit
+   *      - Affiche le résultat
+   *      - Ajoute les données dans l'historique
+   *
+   *  - Vide le champ de texte celsius
+   *  - Mets le focus au champ texte celsius
+   *
+   */
   formulaire.addEventListener('submit', function (event) {
     event.preventDefault();
 
     let tempCelcius = parseFloat(txtCelcius.value);
     let tempFahrenheit = '';
 
-    // Test la valeur saisie par l'utilisateur
     if(txtCelcius.value.length < 1 || isNaN(txtCelcius.value)) {
+
+      strongFahrenheit.innerHTML =  '';
       alert('Entrer un température valide !');
+
     } else {
+
       tempFahrenheit = tempCelcius * 9 / 5 + 32;
-      // ulHistorique.innerHTML += "<li>" + tempCelcius + "°C => " +
-      // tempFahrenheit + "°F</li>";
+
+      strongFahrenheit.innerHTML =  tempFahrenheit + '°F';
+
       ulHistorique.innerHTML +=
         `<li>
             ${tempCelcius}°C = ${tempFahrenheit}°F
         </li>`;
     }
 
-    strongFahrenheit.innerHTML =  tempFahrenheit + '°F';
-
     txtCelcius.value = '';
     txtCelcius.focus();
   });
 
+  /**
+   * Ecoute l'événement rest du formulaire
+   *  - Vide l'historique
+   *  - Vide le champ texte celsius
+   *  - Mets le focus au champ texte celsuis
+   */
   formulaire.addEventListener('reset', function (event) {
     event.preventDefault();
 
     ulHistorique.innerHTML = '';
-
+    strongFahrenheit.innerHTML = '';
     txtCelcius.value = '';
     txtCelcius.focus();
   });
 
-  document.body.addEventListener('keyup', function(event) {
-    console.log(event.key);
+  /**
+   * Ecout les événements claviers du champ texte celcius
+   *  - Reset le formulaire quand la touche Escape est relachée
+   */
+  txtCelcius.addEventListener('keyup', function(event) {
     if (event.key === 'Escape') {
       formulaire.reset();
     }
   });
 }()); // Main IIFE
-
