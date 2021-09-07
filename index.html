@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
 <h1>Convertisseur Celsius > Fahrenheit</h1>
 
 <form method="get" action="https://kode.ch/getpost/">
+    <ul class="form">
+        <li></li>
+        <li>
+            <label for="celsius">Saisir une température °C</label>
+            <input type="text" name="celsius" id="celsius">
+        </li>
+        <li><button type="submit">Convertir en °F</button></li>
+    </ul>
 
-    <label>Saisir une température °C</label>
 
-    <input type="text" name="celsius" id="celsius">
 
-    <button type="submit">Convertir en °F</button>
+
+
 </form>
 
 <p>Résultat : <strong id="fahrenheit"></strong></p>

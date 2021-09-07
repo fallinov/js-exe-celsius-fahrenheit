@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    color: #1D3557;
+    background-color: #F1FAEE;
+}
+
+a {
+    color: #E63946;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A8DADC;
+}
+
+button {
+    padding: .6rem 1rem;
+    border: none;
+    background-color: #E63946;
+    color: #F1FAEE;
+}
+
+button:hover  {
+    background-color: #457B9D;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all 0.3s ease;
+}
+
+/**************** FORMULAIRES ****************/
+form {
+    padding: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .3rem;
+}
+
+input {
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: .9rem ;
+    padding: .3rem .6rem;
+}
+
+ul.form {
+    list-style-type: none;
+    padding: 0;
+}
