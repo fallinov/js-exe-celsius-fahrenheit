@@ -52,6 +52,7 @@ label {
 input {
     font-size: inherit;
     font-family: inherit;
+    color: inherit;
     margin-bottom: .9rem ;
     padding: .3rem .6rem;
 }
