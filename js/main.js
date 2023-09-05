@@ -4,22 +4,13 @@
  * @version 0.1
  * @since   2019-08-19
  */
-
-(function main() {
   'use strict';
 
+  // Demander la température en °C
   let celcius = prompt('Entrez la température en °C :');
+  // Convertir la saisie utilisateur en nombre flottant
   celcius = parseFloat(celcius);
-  // ou avec opérateur unaire : celcius = +celcius;
-  console.log(celcius);
-
+  // Calculer la température en °F
   let fahrenheit = celcius * 9 / 5 + 32;
-  // ou faire la conversion à ce moment avec opérateur unaire :
-  // let fahrenheit = +celcius * 9 / 5 + 32;
-
-  console.log(fahrenheit);
+  // Afficher la température en °F
   alert(`${fahrenheit} °F`);
-
-
-}()); // Main IIFE
-
