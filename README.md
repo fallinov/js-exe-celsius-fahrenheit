@@ -16,6 +16,10 @@ La formule de conversion est la suivante :
 [°F] = [°C] x 9 / 5 + 32
 ```
 
+### Bonus 
+Tester si la valeur saisie est bien un nombre avant de la convertir 
+et afficher un message d'erreur si ce n'est pas le cas.
+
 Bonne chance !
 
 ## La doc...
