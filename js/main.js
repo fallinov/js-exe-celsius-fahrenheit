@@ -14,18 +14,14 @@ const spanFahrenheit = document.getElementById('fahrenheit');
 /**
  * Ecoute l'événement submit du formulaire
  *  - Récupère la valeur saisie par l'utilisateur
- *
- *  - Test si la valeur est un nombre valide
+ *  - Convertit la valeur en nombre flottant
+ *  - Teste si la valeur est un nombre valide
  *    - Si pas valide
- *      - Affiche un message d'erreur dans une alerte
- *      - Vide la zone de résultat
+ *      - Affiche un message d'erreur à l'utilisateur
+ *      - Affiche 🙈 dans le <span> de résultat
  *    - Si valide
- *      - Calcule la températeur en Farenheit
- *      - Affiche le résultat
- *
- *  - Vide le champ de texte celsius
- *  - Mets le focus au champ texte celsius
- *
+ *      - Calcule la température en °F
+ *      - Affiche la température en °F dans le <span> de résultat
  */
 btConvertir.addEventListener('click',  () => {
   // Récupère la valeur saisie par l'utilisateur
@@ -42,7 +38,7 @@ btConvertir.addEventListener('click',  () => {
     // Calcule la température en Farenheit
     tempFahrenheit = tempCelcius * 9 / 5 + 32;
     // Affiche le résultat
-    spanFahrenheit.innerText =  tempFahrenheit + '°F';
+    spanFahrenheit.innerText =  `${tempFahrenheit} + °F`;
   }
 });
 
