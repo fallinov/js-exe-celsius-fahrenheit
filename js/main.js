@@ -44,10 +44,5 @@ btConvertir.addEventListener('click',  () => {
     // Affiche le résultat
     spanFahrenheit.innerText =  tempFahrenheit + '°F';
   }
-
-  // Vide le champ de texte celsius
-  txtCelcius.value = '';
-  // Mets le focus au champ texte celsius
-  txtCelcius.focus();
 });
 
