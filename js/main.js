@@ -9,7 +9,7 @@
 // Récupération des éléments HTML à manipuler
 const txtCelcius = document.getElementById('celsius');
 const btConvertir = document.getElementById('convertir');
-const strongFahrenheit = document.getElementById('fahrenheit');
+const spanFahrenheit = document.getElementById('fahrenheit');
 
 /**
  * Ecoute l'événement submit du formulaire
@@ -37,12 +37,12 @@ btConvertir.addEventListener('click',  () => {
     // Affiche un message d'erreur à l'utilisateur
     alert('Entrer un température valide !');
     // Vide la zone de résultat
-    strongFahrenheit.innerText =  '>_<';
+    spanFahrenheit.innerText =  '🙈';
   } else {
     // Calcule la température en Farenheit
     tempFahrenheit = tempCelcius * 9 / 5 + 32;
     // Affiche le résultat
-    strongFahrenheit.innerText =  tempFahrenheit + '°F';
+    spanFahrenheit.innerText =  tempFahrenheit + '°F';
   }
 
   // Vide le champ de texte celsius
