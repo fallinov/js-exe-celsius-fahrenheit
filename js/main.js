@@ -38,7 +38,7 @@ btConvertir.addEventListener('click',  () => {
     // Calcule la température en Farenheit
     tempFahrenheit = tempCelcius * 9 / 5 + 32;
     // Affiche le résultat
-    spanFahrenheit.innerText =  `${tempFahrenheit} + °F`;
+    spanFahrenheit.innerText =  `${tempFahrenheit} °F`;
   }
 });
 
