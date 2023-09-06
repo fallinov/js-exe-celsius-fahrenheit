@@ -13,7 +13,7 @@
 
   // Vérifier que la saisie utilisateur est un nombre
   if (isNaN(celcius)) {
-    // Afficher un message d'erreur
+    // Afficher un message d'erreur à l'utilisateur
     alert('La valeur saisie n\'est pas un nombre !');
     // Arrêter le script
     throw new Error('La valeur saisie n\'est pas un nombre !'); // Erreur fatale
@@ -21,5 +21,5 @@
 
   // Calculer la température en °F
   let fahrenheit = celcius * 9 / 5 + 32;
-  // Afficher la température en °F
+  // Afficher la température en °F à l'utilisateur
   alert(`${fahrenheit} °F`);
