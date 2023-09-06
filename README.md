@@ -19,12 +19,14 @@ La formule de conversion est la suivante :
 [°F] = [°C] x 9 / 5 + 32
 ```
 ## Etape 2 - Fahrenheit avec formulaire
-![solution-avec-formulaire.png](img/solution-avec-formulaire.png)
 
 Réaliser l'étape 1 avec un formulaire en remplacement du prompt.
 
-### Instructions
+---
 
+![solution-avec-formulaire.png](img/solution-avec-formulaire.png)
+
+### Instructions
 >Créer une nouvelle branche `etape2-nom-prenom`.
 
 #### 1. Dans le HTML `index.html`
