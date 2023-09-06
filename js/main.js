@@ -7,5 +7,4 @@
 'use strict'; // Demande un interprétation stricte du code
 
 let a = 'Bonjour';
-
 console.log(a);
