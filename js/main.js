@@ -6,5 +6,7 @@
  */
 'use strict'; // Demande un interprétation stricte du code
 
+/* Vous pouvez effacer les deux lignes suivantes et commencer à coder votre
+   application. Bonne programmation ! */
 let a = 'Bonjour';
 console.log(a);
