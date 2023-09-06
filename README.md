@@ -45,12 +45,20 @@ Réaliser l'étape 1 avec un formulaire en remplacement du prompt.
    3. Si la valeur n'est pas un nombre, afficher un message d'erreur
    4. Sinon, convertir la température en °F
    5. Injecter la valeur en °F dans le span avec `.innerText`
+   6. Vider le champ texte avec `.value = ''`
 
 
 #### 3. Créer un historique
 1. Après le paragraphe, ajouter une liste vide `<ul id="historique"></ul>`
 2. Dans le JavaScript, créer un `<li>` en utilisant `.innerHTML`, pour chaque 
    conversion réalisée par l'utilisateur. Ex: `<li>12°C = 53.6°F</li>`
+
+#### 4. Ajouter un bouton pour effacer l'historique
+1. Après la liste, ajouter un bouton `<button id="effacer">Effacer</button>`
+2. Dans le JavaScript, ajouter un écouteur d'événement `click` sur le bouton
+   1. vider la liste avec `.innerHTML = ''`
+   2. vider le span avec `.innerText = ''`
+   3. vider le champ texte avec `.value = ''`
 
 ## La doc...
 * [Variables et constantes](https://divtec.gitbook.io/javascript/javascript/introduction/variables-et-constantes#declarer-des-variables-et-constantes)
